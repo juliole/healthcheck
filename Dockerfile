@@ -10,6 +10,6 @@ ENV KUBE_LATEST_VERSION="v1.5.4"
  && chmod +x /bin/kubectl \
  && apk add --update git \
  && git clone https://github.com/juliole/healthcheck.git \
- && chmod 777 /healthcheck/podStaus.sh \
+ && chmod 777 /healthcheck/podStatus.sh \
  && apk del --purge deps \
  && rm /var/cache/apk/* 
