@@ -1,5 +1,5 @@
-#!/bin/bash
-sudo kubectl get pods | {
+#!/bin/sh
+/bin/kubectl get pods | {
 while IFS= read -r line
 do
 if [[ "$line" != *Running* ]] && [[ "$line" != *STATUS* ]]; then
