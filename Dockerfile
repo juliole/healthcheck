@@ -1,6 +1,6 @@
 FROM alpine:3.3
 
-ENTRYPOINT ["/healthcheck/test.sh"]
+ENTRYPOINT ["/healthcheck/podStatus.sh"]
 
 ENV KUBE_LATEST_VERSION="v1.5.4"
 
