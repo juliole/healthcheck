@@ -10,7 +10,7 @@ case "$line"  in
 *"jstest"*)
 ;;
 *)
-  echo "exit 1";;
+exit 1;;
 esac
 done
 }
