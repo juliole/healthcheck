@@ -7,6 +7,8 @@ case "$line"  in
 ;;
 *"STATUS"*)
 ;;
+*"jstest"*)
+;;
 *)
   echo "exit 1";;
 esac
