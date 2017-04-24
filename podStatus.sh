@@ -2,10 +2,14 @@
 /bin/kubectl get pods | {
 while IFS= read -r line
 do
-if [[ "$line" != *Running* ]] && [[ "$line" != *STATUS* ]]; then
-  echo "$line"
-  exit 1
-fi
+case "$line"  in
+*"Running"*)
+;;
+*"STATUS"*)
+;;
+*)
+  echo "$line";;
+esac
+#  exit 1
 done
 }
-
