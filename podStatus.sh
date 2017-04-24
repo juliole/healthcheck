@@ -8,7 +8,7 @@ case "$line"  in
 *"STATUS"*)
 ;;
 *)
-  exit 1;;
+  echo "exit 1"";;
 esac
 done
 }
