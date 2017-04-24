@@ -9,7 +9,7 @@ case "$line"  in
 ;;
 *)
   echo "$line";;
+  exit 1
 esac
-#  exit 1
 done
 }
