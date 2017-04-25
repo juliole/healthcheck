@@ -10,6 +10,7 @@ case "$line"  in
 *"jstest"*)
 ;;
 *)
+echo "Pods not in running status" 1>&2;
 exit 1;;
 esac
 done
