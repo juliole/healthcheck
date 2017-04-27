@@ -7,7 +7,7 @@ case "$line"  in
 ;;
 *"STATUS"*)
 ;;
-*"jstest"*)
+*"ContainerCreating"*)
 ;;
 *)
 echo "Pods not in running status" 1>&2;
