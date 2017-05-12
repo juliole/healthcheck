@@ -10,7 +10,7 @@ case "$line"  in
 *"ContainerCreating"*)
 ;;
 *)
-echo "Pods not in running status" 1>&2;
+echo "Pods not in running status. " 1>&2;
 exit 1;;
 esac
 done
